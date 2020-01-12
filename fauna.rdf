@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xml:base ="http://example.org/schemas/fauna"
+	xmlns:f="http://www.example.org/schemas/fauna#">
+
+<rdf:Description rdf:ID="Fauna">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:ID="rat">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:noLegs rdf:datatype = "http://www.w3.org/2001/XMLSchema#integer">4</f:noLegs>
+</rdf:Description>
+	
+<rdf:Description rdf:ID="shrimp">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</f:noLegs>
+</rdf:Description>
+	
+<rdf:Description rdf:ID="shrimp">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</f:noLegs>
+</rdf:Description>	
+	
+<rdf:Description rdf:ID="sparrow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:noLegs rdf:datatype = "http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+</rdf:Description>
+
+<rdf:Description rdf:ID="mallard">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:eats rdf:resource="#shrimp"/>
+	<f:noLegs rdf:datatype = "http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+</rdf:Description>
+
+<rdf:Description rdf:ID="hawk">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+	<f:eats rdf:resource="#rat"/>	
+	<f:noLegs rdf:datatype = "http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+</rdf:Description>
+
+<rdf:Description rdf:ID="owl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>	
+	<f:hasEnemy rdf:resource="#hawk"/>
+	<f:eats rdf:resource="#mallard"/>	
+	<f:eats rdf:resource="#sparrow"/>
+	<f:noLegs rdf:datatype = "http://www.w3.org/2001/XMLSchema#integer">2
+	</f:noLegs>
+</rdf:Description>
+
+</rdf:RDF>
+	
+	<!-- 
+	
+	
+<rdf:Description>
+<f:hawk f:ID="hawk">
+<f:noLegs f:resouce=2>
+<f:eats f:resouce="#rat">
+</f:hawk>
+
+<f:rat f:ID="rat">
+<f:noLegs f:resouce=4>
+</f:rat>
+
+<f:owl f:ID="owl"> 
+<f:noLegs f:resouce=2>
+<f:eats f:resouce="#sparrow">
+<f:eats f:resouce="#mallard">
+</f:owl>
+
+<f:sparrow f:ID="sparrow">
+<f:noLegs f:resouce=2>
+<f:eats f:resouce="#sparrow">
+</f:sparrow>
+
+<f:mallard f:ID="mallard">
+<f:noLegs f:resouce=2>
+<f:eats f:resouce="#shrimp">
+</f:mallard>
+
+<f:shrimp f:ID="shrimp">
+<f:noLegs f:resouce=25>
+</f:shrimp>
+
+<rdf:Description>
+	 -->
+	 
+	 
