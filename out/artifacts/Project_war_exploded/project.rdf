@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    
+    <rdf:Description rdf:ID="person">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="master">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>Master in Business Administration and Engineering</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="uni">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>POLITEHNICA of Bucharest</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="faculty">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>Faculty of Engineering in Foreign Languages</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="specialization">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>CTI in English</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="ocupation">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>project manager</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="job">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:name>Oracle</rdfs:name>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="interest1">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:favBand>Imagine Dragons</rdfs:favBand>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="interest2">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:love>traveling</rdfs:love>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="vacaton">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/> 
+        <rdfs:when>2019</rdfs:when>
+        <rdfs:where>Brazil</rdfs:where>
+        <rdfs:howLong>2 weeks</rdfs:howLong>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="ion"> 
+        <rdfs:subClassOf rdf:resource="#person"/> 
+        <rdfs:name>Ion Popescu</rdfs:name>
+        <rdfs:ocupation>programmer</rdfs:ocupation>
+        <rdfs:job>Mcrosoft</rdfs:job>
+        <rdfs:collegue rdf:resource="#ana"></rdfs:collegue>
+        <rdfs:uni rdf:resource="#uni"></rdfs:uni>
+        <rdfs:faculty rdf:resource="#faculty"></rdfs:faculty>
+        <rdfs:specialization rdf:resource="#specialization"></rdfs:specialization>
+        <rdfs:favBand rdf:resource="#interest1"></rdfs:favBand>
+        <rdfs:haveInterest rdf:resource="#interest2"></rdfs:haveInterest>
+        <rdfs:vacation rdf:resource="#vacation"></rdfs:vacation>
+    </rdf:Description> 
+    
+    <rdf:Description rdf:ID="ana"> 
+        <rdfs:subClassOf rdf:resource="#person"/> 
+        <rdfs:name>Ana Enache</rdfs:name>
+        <rdfs:gradYear>2013</rdfs:gradYear>
+        <rdfs:collegue rdf:resource="#mara"></rdfs:collegue>
+        <rdfs:uni rdf:resource="#uni"></rdfs:uni>
+        <rdfs:faculty rdf:resource="#faculty"></rdfs:faculty>
+        <rdfs:specialization rdf:resource="#specialization"></rdfs:specialization>
+        <rdfs:master rdf:resource="#master"></rdfs:master>
+        <rdfs:ocupation rdf:resource="#ocupation"></rdfs:ocupation>
+        <rdfs:worksAt rdf:resource="#job"></rdfs:worksAt>
+        <rdfs:favBand rdf:resource="#interest1"></rdfs:favBand>
+        <rdfs:haveInterest rdf:resource="#interest2"></rdfs:haveInterest>
+        <rdfs:vacation rdf:resource="#vacation"></rdfs:vacation>
+    </rdf:Description> 
+    
+    <rdf:Description rdf:ID="mara"> 
+        <rdfs:subClassOf rdf:resource="#person"/> 
+        <rdfs:name>Mara Iordache</rdfs:name>
+        <rdfs:master rdf:resource="#master"></rdfs:master>
+        <rdfs:ocupation rdf:resource="#ocupation"></rdfs:ocupation>
+        <rdfs:worksAt rdf:resource="#job"></rdfs:worksAt>
+        <rdfs:favBand rdf:resource="#interest1"></rdfs:favBand>
+        <rdfs:haveInterest rdf:resource="#interest2"></rdfs:haveInterest>
+        <rdfs:vacation rdf:resource="#vacation"></rdfs:vacation>
+    </rdf:Description> 
+    
+    <rdf:Description rdf:ID="vlad"> 
+        <rdfs:subClassOf rdf:resource="#person"/> 
+        <rdfs:name>Vlad Ionescu</rdfs:name>
+        <rdfs:graduated>Tourism at University of Bucharest</rdfs:graduated>
+        <rdfs:ocupation>as his own travel agency</rdfs:ocupation>
+        <rdfs:haveInterest rdf:resource="#interest2"></rdfs:haveInterest>
+        <rdfs:vacation rdf:resource="#vacation"></rdfs:vacation>
+    </rdf:Description> 
+    
+</rdf:RDF>

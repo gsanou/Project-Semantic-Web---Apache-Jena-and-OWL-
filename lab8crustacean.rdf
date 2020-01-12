@@ -1,0 +1,98 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="http://www.example.org/schemas/fauna"
+    xmlns:f="http://www.example.org/schemas/fauna#"
+    xmlns:e="http://www.example.org/schemas/example#"
+    xmlns:j="http://www.example.org/schemas/j#">
+    
+    <rdf:Description rdf:ID="fauna">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="Crustacean">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="Bird">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="Rodent">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="crustacean">
+        <rdf:type rdf:resource="#Crustacean"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="noturnalBird">
+        <rdf:type rdf:resource="Bird"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="dayBird">
+        <rdf:type rdf:resource="Bird"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="birdOfPrey">
+        <rdf:type rdf:resource="Bird"/>
+    </rdf:Description>
+    
+    
+    <rdf:Description rdf:ID="rodent">
+        <rdf:type rdf:resource="Rodent"/>
+    </rdf:Description>
+    
+    
+    <rdf:Description rdf:ID="rat">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</f:noLegs>
+        <e:belongsToGroup rdf:resource="#rodent"/>
+    </rdf:Description>
+    
+    
+    <rdf:Description rdf:ID="hawk">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <f:title>hawk</f:title>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+        <f:eats rdf:resource="#rat"/>
+        <e:belongsToGroup rdf:resource="#birdOfPrey"/>
+    </rdf:Description>
+    
+    
+    <rdf:Description rdf:ID="sparrow">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+    </rdf:Description>
+    
+    
+    <rdf:Description rdf:ID="owl">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <f:title>owl</f:title>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+        <f:hasEnemy rdf:resource="#hawk"/>
+        <f:eats rdf:resource="#mallard"/>
+        <f:eats rdf:resource="#sparrow"/>
+        <e:belongsToGroup rdf:resource="#nocturnalBird"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="mallard">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</f:noLegs>
+        <f:eats rdf:resource="#shrimp"/>
+        <e:belongsToGroup rdf:resource="#dayBird"/>
+    </rdf:Description>
+    
+    <rdf:Description rdf:ID="shrimp">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#fauna"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#crustacean"/>
+        <f:noLegs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</f:noLegs>
+        <e:belongsToGroup rdf:resource="#crustacean"/>
+    </rdf:Description>
+    
+</rdf:RDF>
+
+
+
+
