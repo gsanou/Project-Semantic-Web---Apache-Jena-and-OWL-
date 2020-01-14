@@ -1,0 +1,1237 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andreea/ontologies/COR"
+     xml:base="http://www.semanticweb.org/andreea/ontologies/COR"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:project="http://www.semanticweb.org/andreea/ontologies/COR#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andreea/ontologies/COR"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasStudies"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isFaculty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasHighschool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasHighschool">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasStudies"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isHighschool"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasMaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasMaster">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isMaster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasOccupation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isOccupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasSchool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasSchool">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasStudies"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSchool"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasSpecialization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasSpecialization">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasStudies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasStudies">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#hasUniversity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#hasUniversity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasStudies"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isUniversity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isFaculty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isFaculty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isHighschool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isHighschool">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isMaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isMaster"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isOccupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isOccupation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isSchool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isSchool">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSchool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#isUniversity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#isUniversity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isStudiedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Credits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Credits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Duration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Faculty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Faculty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Manager -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Manager">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Hotel_and_restaurant_managers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#ASE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#ASE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Administration_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Administration_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Administrative_and_commercial_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Administrative_and_commercial_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Managers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Agricultural_forestry_and_fishery_labourers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Agricultural_forestry_and_fishery_labourers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Ana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasMaster"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#MBAE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Assemblers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Assemblers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Building_and_related_trades_workers_excluding_electricians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Building_and_related_trades_workers_excluding_electricians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_associate_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_associate_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#COROccupations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#CTI_Franceza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Franceza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Chief_executives_senior_officials_and_legislators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Chief_executives_senior_officials_and_legislators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Managers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Cleaners_and_helpers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Cleaners_and_helpers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+        <rdfs:comment>grupa majora 4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Credits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Credits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Customer_services_clerks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Customer_services_clerks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Database_and_network_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Database_and_network_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technology_professionals"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_and_applications_developers_and_analysts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Drivers_and_mobile_plant_operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Drivers_and_mobile_plant_operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Duration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Electrical_and_electronics_trades_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Electrical_and_electronics_trades_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Electronics_and_telecommunications_installers_and_repairers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Electronics_and_telecommunications_installers_and_repairers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Electrical_and_electronics_trades_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Electrotechnology_engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Electrotechnology_engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#FAIMA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#FAIMA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#FILS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#FILS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Finance_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Finance_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Food_preparation_assistants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Food_preparation_assistants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#General_and_keyboard_clerks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#General_and_keyboard_clerks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Handicraft_and_printing_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Handicraft_and_printing_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Health_associate_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Health_associate_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Health_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Health_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Highschool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Highschool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Hospitality_retail_and_other_services_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Hospitality_retail_and_other_services_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Managers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Hotel_and_restaurant_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Hotel_and_restaurant_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Hospitality_retail_and_other_services_managers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technicians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technicians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technology_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technology_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Ion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_developers"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasUniversity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Poly_Buc"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Labourers_in_mining_construction_manufacturing_and_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Labourers_in_mining_construction_manufacturing_and_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_and_cultural_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_and_cultural_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_cultural_and_related_associate_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_cultural_and_related_associate_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Life_science_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Life_science_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#MBAE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#MBAE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isMaster"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isMaster"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+        <rdfs:comment>grupa majora 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Mara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Mara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasFaculty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasMaster"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#MBAE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#hasSpecialization"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_agricultural_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_agricultural_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_forestry_fishery_and_hunting_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_forestry_fishery_and_hunting_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Metal_machinery_and_related_trades_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Metal_machinery_and_related_trades_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Numerical_and_material_recording_clerks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Numerical_and_material_recording_clerks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Other_clerical_support_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Other_clerical_support_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Personal_care_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Personal_care_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Personal_service_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Personal_service_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Physical_and_earth_science_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Physical_and_earth_science_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Poly_Buc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Poly_Buc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#University"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isUniversity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Production_and_specialized_services_managers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Production_and_specialized_services_managers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Managers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+        <rdfs:comment>grupa majora 2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_and_applications_developers_and_analysts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_developers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Protective_services_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Protective_services_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Refuse_workers_and_other_elementary_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Refuse_workers_and_other_elementary_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Sales_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Sales_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Shop_salespersons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Shop_salespersons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Sales_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Software_and_applications_developers_and_analysts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Software_and_applications_developers_and_analysts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technology_professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Software_developers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Software_developers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_and_applications_developers_and_analysts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#isOccupation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Stationary_plant_and_machine_operators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Stationary_plant_and_machine_operators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Street_and_related_sales_and_service_workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Street_and_related_sales_and_service_workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Studies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Subsistence_farmers_fishers_hunters_and_gatherers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Subsistence_farmers_fishers_hunters_and_gatherers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Teaching_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Teaching_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#COROccupations"/>
+        <rdfs:comment>grupa majora 3</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Tourism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Tourism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#Uni_Buc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Uni_Buc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#University"/>
+    </owl:Class>
+    
+	
+	 <NamedIndividual rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Mara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+		<project:hasFaculty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+        <project:hasSpecialization rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+        <project:hasOccupation rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Software_developers"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/littlehobbit/ontologies/2013/project#Ion -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+		<project:hasFaculty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+		<project:hasMaster rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#MBAE"/>
+        <project:hasOccupation rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager"/>
+        <project:hasSpecialization rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/littlehobbit/ontologies/2013/project#Ana -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Person"/>
+		<project:hasMaster rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#MBAE"/>
+        <project:hasOccupation rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Project_Manager"/>
+        <project:hasFaculty rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+        <project:hasSpecialization rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+    </NamedIndividual>
+	
+	
+
+
+    <!-- http://www.semanticweb.org/andreea/ontologies/COR#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andreea/ontologies/COR#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Credits">
+        <rdfs:comment>ai nevoie de credite sa treci anul</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#ASE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Poly_Buc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Uni_Buc"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Administrative_and_commercial_managers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Chief_executives_senior_officials_and_legislators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Hospitality_retail_and_other_services_managers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Production_and_specialized_services_managers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Agricultural_forestry_and_fishery_labourers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Cleaners_and_helpers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Food_preparation_assistants"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Labourers_in_mining_construction_manufacturing_and_transport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Refuse_workers_and_other_elementary_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Street_and_related_sales_and_service_workers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ana"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Ion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Mara"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Assemblers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Drivers_and_mobile_plant_operators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Stationary_plant_and_machine_operators"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Building_and_related_trades_workers_excluding_electricians"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Electrical_and_electronics_trades_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Handicraft_and_printing_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Metal_machinery_and_related_trades_workers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_associate_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Health_associate_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technicians"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_cultural_and_related_associate_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_associate_professionals"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Business_and_administration_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Health_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Information_and_communications_technology_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Legal_social_and_cultural_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Science_and_engineering_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Teaching_professionals"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Engleza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#CTI_Franceza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#MBAE"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Clerical_support_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Craft_and_related_trades_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Elementary_occupations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Managers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Plant_and_machine_operators_and_assemblers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Service_and_sales_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Skilled_agricultural_forestry_and_fishery_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Technicians_and_associate_professionals"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Credits"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Duration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Faculty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Highschool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#School"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#University"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Customer_services_clerks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#General_and_keyboard_clerks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Numerical_and_material_recording_clerks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Other_clerical_support_workers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Electrotechnology_engineers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Life_science_professionals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Physical_and_earth_science_professionals"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#FAIMA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#FILS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Tourism"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_agricultural_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Market-oriented_skilled_forestry_fishery_and_hunting_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Subsistence_farmers_fishers_hunters_and_gatherers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Personal_care_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Personal_service_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Protective_services_workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andreea/ontologies/COR#Sales_workers"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

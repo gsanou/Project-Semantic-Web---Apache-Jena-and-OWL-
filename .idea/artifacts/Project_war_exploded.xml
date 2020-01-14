@@ -64,6 +64,7 @@
           <element id="file-copy" path="$PROJECT_DIR$/../jung2-2_0_1/jung-visualization-2.0.1.jar" />
           <element id="library" level="project" name="net.sf.jung:jung-3d:2.0.1" />
           <element id="file-copy" path="$USER_HOME$/Downloads/jung-samples-2.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Lab10-11-try1-1.0-SNAPSHOT.jar" />
         </element>
       </element>
       <element id="library" level="project" name="net.sf.jung:jung-3d:2.0.1" />

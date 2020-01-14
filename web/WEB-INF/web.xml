@@ -37,4 +37,50 @@
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Graduate</servlet-name>
+        <servlet-class>example.Graduate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Graduate</servlet-name>
+        <url-pattern>/graduate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Profession</servlet-name>
+        <servlet-class>example.Profession</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Profession</servlet-name>
+        <url-pattern>/profession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfessionShow</servlet-name>
+        <servlet-class>example.ProfessionShow</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfessionShow</servlet-name>
+        <url-pattern>/professionShow</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Interests</servlet-name>
+        <servlet-class>example.Interests</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Interests</servlet-name>
+        <url-pattern>/interests</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Reasoner</servlet-name>
+        <servlet-class>example.Reasoner</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Reasoner</servlet-name>
+        <url-pattern>/reasoner</url-pattern>
+    </servlet-mapping>
 </web-app>

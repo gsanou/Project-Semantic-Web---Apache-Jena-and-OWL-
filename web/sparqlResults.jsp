@@ -1,11 +1,13 @@
 <%--
   Created by IntelliJ IDEA.
   User: miruna
-  Date: 12.01.2020
-  Time: 16:01
+  Date: 14.01.2020
+  Time: 19:43
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Map" %>
 <html>
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,25 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/styles.css">
     <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        /* [1] The container */
-        /*.img-hover-zoom {*/
-            /*height: 3000px; !* [1.1] Set it as per your need *!*/
-        /*    overflow: hidden; !* [1.2] Hide the overflowing of child elements *!*/
-        /*}*/
-
-        /* Point-zoom Container */
-        /*.img-hover-zoom--point-zoom img {*/
-        /*    transform-origin: 25% 55%;*/
-        /*    transition: transform 1s, filter .5s ease-out;*/
-        /*}*/
-
-        /*!* The Transformation *!*/
-        /*.img-hover-zoom--point-zoom:hover img {*/
-        /*    transform: scale(3);*/
-        /*}*/
-    </style>
+    <title>Profession Show</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -46,9 +30,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
-</nav>
-<%String graph = (String) session.getAttribute("graph");%>
-<div class="container is-fluid ">
     <div class="level-item">
         <a href="${pageContext.request.contextPath}/add" ><button class="button is-info is-rounded">Go to Add and Remove</button></a>
         <a href="${pageContext.request.contextPath}/graduate" ><button class="button is-info is-rounded">Go to Graduate</button></a>
@@ -57,11 +38,23 @@
         <a href="${pageContext.request.contextPath}/sparql" ><button class="button is-info is-rounded">Go to Run Sparql</button></a>
         <a href="${pageContext.request.contextPath}/reasoner" ><button class="button is-info is-rounded">Go to Run Reasoner</button></a>
     </div>
-<div class="img-hover-zoom--point-zoom">
-    <img src="${pageContext.request.contextPath}/images/<%out.print(graph);%>" alt="image" >
-<%--    ="width: 100%; height: 100%;">--%>
-</div>
+</nav>
+<% Map<String, ArrayList<String>> queryq = (Map<String, ArrayList<String>>) session.getAttribute("resultq7");
+    ArrayList<String> profession = queryq.get("x");
+    ArrayList<String> names = queryq.get("names");
 
+    for (int i=0; i<names.size();i++) {
+%>
+<div class="container is-fluid ">
+    <div class="level-item">
+        <h3 style="font-weight: bold">Name:  </h3><h3><%out.print(names.get(i));%></h3>
+    </div>
+    <div class="level-item">
+        <h3 style="font-weight: bold">Faculty: </h3> <h3><%out.print(profession.get(i));%></h3>
+
+    </div>
+
+    <%}%>
 
 </div>
 </body>

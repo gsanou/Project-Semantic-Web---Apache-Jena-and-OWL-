@@ -19,6 +19,15 @@
   <title>Hello</title>
 </head>
   <body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="http://localhost/index.php">All options</a>
+      <a class="nav-link" href="http://localhost/logout.php">Logout</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
   <div class="container is-fluid ">
     <div class="level-item has-text-centered">
       <form method="POST" action="upload" enctype="multipart/form-data" >

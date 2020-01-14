@@ -55,7 +55,7 @@ public class Upload extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("filename", fileName);
 
-            request.setAttribute("graph", fileName+"Graph.png");
+            session.setAttribute("graph", fileName+"Graph.png");
             request.getRequestDispatcher("/graph.jsp").forward(request, response);
         } catch (FileNotFoundException fne) {
             writer.println("You either did not specify a file to upload or are "

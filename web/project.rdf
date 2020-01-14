@@ -58,7 +58,7 @@
         <rdfs:subClassOf rdf:resource="#person"/> 
         <rdfs:name>Ion Popescu</rdfs:name>
         <rdfs:ocupation>programmer</rdfs:ocupation>
-        <rdfs:job>Mcrosoft</rdfs:job>
+        <rdfs:job>Microsoft</rdfs:job>
         <rdfs:collegue rdf:resource="#ana"></rdfs:collegue>
         <rdfs:uni rdf:resource="#uni"></rdfs:uni>
         <rdfs:faculty rdf:resource="#faculty"></rdfs:faculty>
